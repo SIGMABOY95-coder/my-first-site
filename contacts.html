@@ -15,37 +15,95 @@
         <a class="header__link" href="contacts.html">Контакты</a>
       </nav>
     </header>
-    <h1>Контакты</h1>
-    <ul>
-      <li>mail@ru</li>
-      <li>+7970 044 55 55</li>
-    </ul>
 
-    <h2>Оставить Заявку</h2>
-    <form class="form" action="#">
-      <div>
-        <label>
-          <span class="form__name form__name-1">
-            <u>Имя</u>
-          </span>
-          <input type="text" placeholder="Ваше имя" name="username" value="" />
-        </label>
-      </div>
-      <div>
-        <label>
-          <span class="form__name form__name-2">
-            <u>Номер</u>
-          </span>
-          <input type="tel" placeholder="номер тел" name="number" value="+7" />
-        </label>
-      </div>
-      <div>
+    <div class="main__contacts">
+      <h1 class="contacts__title">Контакты</h1>
+      <ul>
+        <li>mail@ru</li>
+        <li>+7970 044 55 55</li>
+      </ul>
+
+      <h2>Оставить Заявку</h2>
+      <form class="form" action="#">
+        <!-- Блок Имя -->
         <div>
-          <textarea name="text" placeholder="Введите текст"></textarea>
+          <span class="form__name form__name-1">
+            <label for="username"><u>Имя:</u></label>
+          </span>
+          <input
+            id="username"
+            type="text"
+            placeholder="Ваше имя"
+            name="username"
+            value=""
+            required
+          />
         </div>
-        <button type="submit" title="Отправить форму">Отправить</button>
-      </div>
-    </form>
+
+        <!-- Блок Номер телефона -->
+        <div>
+          <span class="form__name form__name-2">
+            <label for="number"><u>Номер</u></label>
+          </span>
+          <input
+            id="number"
+            type="tel"
+            placeholder="номер тел"
+            name="number"
+            value="+7"
+            required
+          />
+        </div>
+        <!-- Вот этого закрывающего div не хватало! -->
+
+        <!-- Блок выбора связи -->
+        <div>
+          <u>Выберите, как с вами связаться:</u>
+          <div>
+            <div>
+              <label for="contact-phone"
+                ><small>По номеру телефона:</small></label
+              >
+              <input type="radio" id="contact-phone" name="contact_method" />
+            </div>
+            <div>
+              <label for="contact-whatsapp"><small>По Whatsapp:</small></label>
+              <input type="radio" id="contact-whatsapp" name="contact_method" />
+            </div>
+            <div>
+              <label for="contact-any"><small>Без разницы:</small></label>
+              <input
+                type="radio"
+                id="contact-any"
+                name="contact_method"
+                checked
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Блок Текст и Кнопка -->
+        <div>
+          <div>
+            <textarea
+              name="text"
+              rows="4"
+              cols="40"
+              placeholder="Введите текст"
+            ></textarea>
+          </div>
+          <button type="submit" title="Отправить форму">Отправить</button>
+          <button type="reset" title="Сбросить форму">Сбросить</button>
+        </div>
+        <select name="site-select" id="site-option">
+          <option value="">--Выберите Услугу--</option>
+          <optgroup label="Верстка на HTML&CSS">
+            <option value="Верстка по макету">Верстка по макету</option>
+            <option value="Верстка без макета">Верстка без макета</option>
+          </optgroup>
+        </select>
+      </form>
+    </div>
 
     <footer class="footer">
       <hr />

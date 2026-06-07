@@ -1,0 +1,183 @@
+body {
+  background-color: rgb(127, 127, 119);
+  color: white;
+}
+
+.header {
+  font-size: 4rem;
+  background-color: black;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+  border: 1px solid red;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header__text--bold {
+  font-weight: bold;
+  margin: 0;
+}
+
+.header__nav {
+  background-color: aqua;
+  font-size: 2rem;
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.header__link {
+  text-decoration: none;
+}
+
+.main {
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+}
+
+.main__container {
+  /* background-color: rgb(121, 122, 122);
+  width: 80vw;
+  padding: 0 15px;
+  border-radius: 10px;
+  margin-top: 10px; */
+}
+
+.main__title {
+}
+
+.main__text--none {
+  text-decoration: none;
+}
+
+.skills {
+  font-size: 1.2rem;
+}
+
+.skills__text--orange {
+  color: orange;
+}
+
+.skills__text--blue {
+  color: blue;
+}
+
+.skills__text--yellow {
+  color: yellow;
+}
+
+.skills__text--cornflowerblue {
+  color: cornflowerblue;
+}
+
+.main__img--size {
+  width: 200px;
+  max-width: 100%;
+  height: auto;
+}
+
+.main__button {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  text-decoration: none;
+  width: 120px;
+  height: 40px;
+  border: 1px solid rgb(243, 243, 243);
+  box-sizing: border-box;
+  background-color: greenyellow;
+  border-radius: 7px;
+}
+
+.form__name {
+  display: block;
+  margin: 0;
+}
+
+.main-services__title {
+  text-align: center;
+}
+
+.main-services__container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-services__cards {
+  width: 350px;
+
+  padding: 15px;
+
+  border: 1px solid red;
+  background-color: black;
+  border-radius: 5%;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 1.5rem;
+  padding-top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-services__cards-title {
+  font-size: 1.3rem;
+  margin: 0 0 10px;
+}
+
+.main__button--flex {
+  display: flex;
+  justify-content: center;
+}
+
+.skills__text--no-margin {
+  margin: 0;
+}
+
+.main__contacts {
+  height: 650px;
+  background-color: rgb(171, 173, 174);
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 500px;
+}
+
+.contacts__title {
+  margin: 0;
+}
+
+.form {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+
+#username {
+  width: 300px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: rgb(37, 229, 229);
+  border: 1px solid black;
+  text-align: center;
+}
+
+#number {
+  width: 300px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: rgb(37, 229, 229);
+  border: 1px solid black;
+  text-align: center;
+}
