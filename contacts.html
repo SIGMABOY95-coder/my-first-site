@@ -54,7 +54,7 @@
             required
           />
         </div>
-        <!-- Вот этого закрывающего div не хватало! -->
+        <!-- Ошибка исправлена: здесь строго один закрывающий тег -->
 
         <!-- Блок выбора связи -->
         <div>
@@ -64,11 +64,21 @@
               <label for="contact-phone"
                 ><small>По номеру телефона:</small></label
               >
-              <input type="radio" id="contact-phone" name="contact_method" />
+              <input
+                type="radio"
+                id="contact-phone"
+                name="contact_method"
+                value="phone"
+              />
             </div>
             <div>
               <label for="contact-whatsapp"><small>По Whatsapp:</small></label>
-              <input type="radio" id="contact-whatsapp" name="contact_method" />
+              <input
+                type="radio"
+                id="contact-whatsapp"
+                name="contact_method"
+                value="whatsapp"
+              />
             </div>
             <div>
               <label for="contact-any"><small>Без разницы:</small></label>
@@ -76,13 +86,27 @@
                 type="radio"
                 id="contact-any"
                 name="contact_method"
+                value="any"
                 checked
               />
             </div>
           </div>
         </div>
 
-        <!-- Блок Текст и Кнопка -->
+        <!-- Блок выбора услуги -->
+        <div>
+          <label for="site-option"><u>Выберите Услугу:</u></label
+          ><br />
+          <select name="site-select" id="site-option">
+            <option value="">--Выберите Услугу--</option>
+            <optgroup label="Верстка на HTML&CSS">
+              <option value="Верстка по макету">Верстка по макету</option>
+              <option value="Верстка без макета">Верстка без макета</option>
+            </optgroup>
+          </select>
+        </div>
+
+        <!-- Блок Текст и Кнопки -->
         <div>
           <div>
             <textarea
@@ -95,13 +119,6 @@
           <button type="submit" title="Отправить форму">Отправить</button>
           <button type="reset" title="Сбросить форму">Сбросить</button>
         </div>
-        <select name="site-select" id="site-option">
-          <option value="">--Выберите Услугу--</option>
-          <optgroup label="Верстка на HTML&CSS">
-            <option value="Верстка по макету">Верстка по макету</option>
-            <option value="Верстка без макета">Верстка без макета</option>
-          </optgroup>
-        </select>
       </form>
     </div>
 
