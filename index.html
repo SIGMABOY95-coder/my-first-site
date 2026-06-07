@@ -33,68 +33,69 @@
 
     <main class="main">
       <div class="main__container">
-      <h1 class="main__title">Это Заголовок</h1>
+        <h1 class="main__title">Это Заголовок</h1>
 
-      <p>
-        Я <b>начинающий</b> <mark>фронтендер</mark> я в начале буду верстать
+        <p>
+          Я <b>начинающий</b> <mark>фронтендер</mark> я в начале буду верстать
+          <a
+            class="main__text main__text--none"
+            href="#"
+            rel="noopener noreferrer"
+            target="_blank"
+            >сайты</a
+          >
+          а потом <br />
+          <em>изучу</em> <u>java script</u> и <strong>устроюсь</strong> в
+          компанию!
+          <small><i>но это не точно</i></small>
+        </p>
+
+        <h2>Список</h2>
+        <div class="skills">
+          <dl class="skills__table">
+            <dt>Языки программирования</dt>
+            <dd class="skills__text skills__text--orange">HTML</dd>
+            <dd class="skills__text skills__text--blue">CSS</dd>
+            <dd class="skills__text skills__text--yellow">
+              <ins>JS</ins><del>Type Script</del>
+            </dd>
+          </dl>
+        </div>
+        <ol start="2" type="1" reversed>
+          <li>Первое<sup>(1)</sup></li>
+          <li>Второе <sup>(2)</sup></li>
+          <li value="5">Третье <sup>(3)</sup></li>
+          <li>H<sub>2</sub>O</li>
+        </ol>
+        <div>
+          <img
+            src="img/ForzaHorizon5_Q9nKWdJNCw.jpg"
+            class="main__img main__img--size"
+            alt="car"
+          />
+          <p>Название игры <cite>Forza Horizon 6</cite></p>
+        </div>
+
         <a
-          class="main__text main__text--none"
-          href="#"
-          rel="noopener noreferrer"
-          target="_blank"
-          >сайты</a
+          class="main__button"
+          href="img/ForzaHorizon5_Q9nKWdJNCw.jpg"
+          title="Скачать фото"
+          download="Фото из форзы"
+          >Скачать</a
         >
-        а потом <br />
-        <em>изучу</em> <u>java script</u> и <strong>устроюсь</strong> в
-        компанию!
-        <small><i>но это не точно</i></small>
-      </p>
-
-      <h2>Список</h2>
-      <div class="skills">
-        <dl class="skills__table">
-          <dt>Языки программирования</dt>
-          <dd class="skills__text skills__text--orange">HTML</dd>
-          <dd class="skills__text skills__text--blue">CSS</dd>
-          <dd class="skills__text skills__text--yellow">
-            <ins>JS</ins><del>Type Script</del>
-          </dd>
-        </dl>
-      </div>
-      <ol start="2" type="1" reversed>
-        <li>Первое<sup>(1)</sup></li>
-        <li>Второе <sup>(2)</sup></li>
-        <li value="5">Третье <sup>(3)</sup></li>
-        <li>H<sub>2</sub>O</li>
-      </ol>
-      <div>
-        <img
-          src="img/ForzaHorizon5_Q9nKWdJNCw.jpg"
-          class="main__img main__img--size"
-          alt="car"
-        />
-        <p>Название игры <cite>Forza Horizon 6</cite></p>
-      </div>
-
-      <a
-        class="main__button"
-        href="img/ForzaHorizon5_Q9nKWdJNCw.jpg"
-        title="Скачать фото"
-        download="Фото из форзы"
-        >Скачать</a
-      >
-      <p>Помните рекламу с цитатой:</p>
-      <q>Если ты не ты сникерсни</q>
-      <p>Чтобы скопирровать нажмите: <code>Ctrl + C</code></p>
-      <pre><code>
-        &lt;img&gt;
+        <p>Помните рекламу с цитатой:</p>
+        <q>Если ты не ты сникерсни</q>
+        <p>Чтобы скопирровать нажмите: <code>Ctrl + C</code></p>
+        <pre><code>
+        &lt;img
           src="img/ForzaHorizon5_Q9nKWdJNCw.jpg"
           class="main__img main__img--size"
           alt="car"
           /&gt;
         </code></pre>
+      </div>
     </main>
-</div>
+
     <footer class="footer">
       <hr />
       <small class="footer__copy">&copy;2026г Все права защищены</small>
